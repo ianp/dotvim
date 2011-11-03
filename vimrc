@@ -292,8 +292,21 @@ map <F3> :source .vim_session<CR>
 " }}}
 
 " VimClojure specific configuration {{{
+let classpath = join(
+    \[
+    \ "src", "src/main/clojure", "src/main/resources",
+    \ "test", "src/test/clojure", "src/test/resoutces",
+    \ "classes", "target/classes", "build/classes/main",
+    \ "lib/*", "lib/dev/*", "bin", "."
+    \],
+    \ ":")
+let vimclojureRoot = $HOME . "/.vim/bundle/vim-clojure"
 let vimclojure#HighlightBuiltins = 1   " Highligh Clojure special forms
+let vimclojure#HighlightContrib=1
+let vimclojure#DynamicHighlighting=1
 let vimclojure#ParenRainbow = 1        " Use rainbow parentheses
+let vimclojure#WantNailgun = 1
+let vimclojure#NailgunClient = vimclojureRoot . "/lib/nailgun/ng"
 " }}}
 
 " Extra vi-compatibility {{{
