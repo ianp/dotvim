@@ -305,6 +305,7 @@ let vimclojure#HighlightBuiltins = 1   " Highligh Clojure special forms
 let vimclojure#HighlightContrib=1
 let vimclojure#DynamicHighlighting=1
 let vimclojure#ParenRainbow = 1        " Use rainbow parentheses
+let vimclojure#FuzzyIndent = 1         " Smart indenting for lispwords forms
 let vimclojure#WantNailgun = 1
 let vimclojure#NailgunClient = vimclojureRoot . "/lib/nailgun/ng"
 " }}}
