@@ -107,10 +107,9 @@ set cmdheight=2                 " use a status bar that is 2 rows high
                                 " set an informative status line
 set statusline=%t%h%w\ %=[%{&ff}]\ %y\ [%l,%v]\ [%p%%/%L]
 
-set lines=30
-set columns=80
-
 if has("gui_running")
+  set lines=50
+  set columns=85
   set guioptions=egmrt
 endif
 " }}}
