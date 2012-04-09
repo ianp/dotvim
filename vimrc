@@ -210,7 +210,7 @@ nmap <leader>r :registers<CR>
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
-" Clears the search register
+" Clears the searc h register
 nmap <silent> <leader>/ :nohlsearch<CR>
 
 " Quick alignment of text
@@ -231,6 +231,8 @@ nmap <leader>= :call Preserve("normal gg=G")<CR>
 
 " Sudo to write
 cmap w!! w !sudo tee % >/dev/null
+
+nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
 " }}}
 
 " Conflict markers {{{
